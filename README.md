@@ -14,8 +14,6 @@
 </p>
 
 <br>
-<br>
-<br>
 
 ## 🚀 Tecnologias
 
