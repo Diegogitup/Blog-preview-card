@@ -122,6 +122,7 @@ body {
     width: fit-content; 
     align-items: center;    
     margin-top: 24px;
+    gap: 12px;
 
 }
 
