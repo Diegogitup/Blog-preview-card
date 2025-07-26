@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+  overflow-wrap: break-word; 
+    -webkit-user-drag: none; 
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+}
+
+:root {
+    --cor-yellow: #f4d04e;
+    --cor-gray-950: #111111;
+    --cor-gray-500: #6b6b6b;
+    --cor-white: #ffffff;
+    --fonte: 'Figtree', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    font-family: var(--fonte);
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--cor-yellow);
+
+
+}
+
+
+.card{
+    background-color: var(--cor-white);
+    padding: 24px;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 327px;
+    max-width: 374px;    
+    border: 1px solid var(--cor-gray-950);
+    display: grid;
+    flex-direction: column;    
+    box-shadow: 9px 9px 0 var(--cor-gray-950);    
+    transition: box-shadow 0.3s ease-in-out;
+
+    /*ajuste do ponteiro*/
+    cursor: default;
+
+}
+
+.img-card {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  
+}
+
+.img-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tag > span{
+    background-color: var(--cor-yellow);
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: var(--cor-gray-950);
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.Publi{    
+    align-self: flex-start;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;    
+}
+
+.titulo {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: var(--cor-gray-950);
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.para{
+    color: var(--cor-gray-500);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 500;
+
+}
+
+
+
+.autor{
+    display: flex;
+    width: fit-content; 
+    align-items: center;    
+    margin-top: 24px;
+
+}
+
+.autor > h5 {
+    
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 800;
+}
+
+.img-perfiel {
+    width: 32px;
+    height: 32px;
+}
+
+
+/*Hover / Active / Focus / Error States*/
+
+.card:hover, .card:focus, .card:active   {    
+    box-shadow: 18px 17px 0 var(--cor-gray-950);
+}
+
+.card:hover .titulo {
+    color: var(--cor-yellow);
+}
+
+
+.card:focus .titulo {
+    color: var(--cor-yellow);
+}
+
+
+.card:active .titulo {
+    color: var(--cor-yellow);
+}
+
+
+.card.erro {
+  box-shadow: 0 0 0 3px red;
+}
+
+.card.erro .titulo {
+    color: red;
+}
