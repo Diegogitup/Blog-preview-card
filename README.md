@@ -26,6 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 Desafio de HTML e CSS para criar um Blog preview card.
+Ao passar o mouse por cima da imagem ela altera o texto "HTML & CSS foundations" para cor amarelo e faz uma borda aparecer.
 
 ---
 
